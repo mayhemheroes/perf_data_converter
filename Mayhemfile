@@ -1,7 +1,5 @@
 project: rnshah9/mayhem-perf-data-converter
 target: perf-to-profile
-image: ghcr.io/rnshah9/mayhem-perf-data-converter
 
 cmds:
   - cmd: ./perf_to_profile -i @@ -o output
-
