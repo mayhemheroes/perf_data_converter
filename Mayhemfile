@@ -2,4 +2,4 @@ project: rnshah9/mayhem-perf-data-converter
 target: perf-to-profile
 
 cmds:
-  - cmd: ./perf_to_profile -i @@ -o output
+  - cmd: /perf_to_profile -i @@ -o output

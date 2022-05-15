@@ -14,5 +14,3 @@ ADD . /mayhem-perf_data_converter
 WORKDIR /mayhem-perf_data_converter
 RUN bazel build src:perf_to_profile
 RUN cp /mayhem-perf_data_converter/bazel-bin/src/perf_to_profile /
-WORKDIR /
-
