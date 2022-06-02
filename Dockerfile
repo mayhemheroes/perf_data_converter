@@ -14,3 +14,7 @@ ADD . /mayhem-perf_data_converter
 WORKDIR /mayhem-perf_data_converter
 RUN bazel build src:perf_to_profile
 RUN cp /mayhem-perf_data_converter/bazel-bin/src/perf_to_profile /
+
+FROM ubuntu:20.04
+COPY --from=builder /mayhem-perf_data_converter/bazel-bin/src/perf_to_profile /perf_to_profile
+COPY --from=builder /lib/x86_64-linux-gnu/ /lib/x86_64-linux-gnu
